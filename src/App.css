@@ -1,38 +1,62 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .App {
   text-align: center;
-}
+  background: linear-gradient(
+    rgba(131, 203, 228, 1) 40%,
+    rgba(77, 161, 217, 1) 80%
+  );
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+} 
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* griglia  */
+.griglia{
+  width: 540px;
+  padding-top: 90px !important;
+  margin: auto ;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* numbers cards */
+.absoulte{
+  position: absolute;
+  top: 90px;
+  width: 540px;
+  margin: auto ;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  z-index: 100;
+}
+.numero{
+  color: #66C1EE;
+  font-size: 45px;
+  font-weight: 700;
+}
+
+/* colors cards  */
+.card-container{
+  width: 180px;
+  height: 140px;
+  border-radius: 10px;
+  margin-top: 10px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-content: center;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card{
+  width: 100px;
+  height: 120px;
+  margin: 0 auto;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
