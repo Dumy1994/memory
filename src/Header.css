@@ -1,0 +1,8 @@
+.header-container{
+    height: 5vh;
+    text-align: center;
+}
+.header-container img{
+    height: 85px;
+    margin-top: 10px;
+} 

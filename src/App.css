@@ -3,60 +3,100 @@
   padding: 0;
   box-sizing: border-box;
 }
-.App {
+.App{
+  background: linear-gradient(180deg,#82cbe4 20%,#45b4fc);
+}
+.cards-container {
   text-align: center;
-  background: linear-gradient(
-    rgba(131, 203, 228, 1) 40%,
-    rgba(77, 161, 217, 1) 80%
-  );
-  height: 100vh;
+  height: 95vh;
   width: 100vw;
   overflow: hidden;
 } 
 
 /* griglia  */
 .griglia{
-  width: 540px;
-  padding-top: 90px !important;
+  width: calc(165px * 3);
+  min-height: 90vh;
+  padding-top: 80px !important;
   margin: auto ;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
 }
 
 /* numbers cards */
-.absoulte{
-  position: absolute;
-  top: 90px;
-  width: 540px;
-  margin: auto ;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  z-index: 100;
-}
+
 .numero{
   color: #66C1EE;
-  font-size: 45px;
+  font-size: 25px;
   font-weight: 700;
 }
-
 /* colors cards  */
 .card-container{
-  width: 180px;
-  height: 140px;
+  width: 165px;
+  height: 145px;
   border-radius: 10px;
-  margin-top: 10px;
+  margin-top: 8px;
   display: flex;
   justify-content: center;
   align-content: center;
 }
 .card{
   width: 100px;
-  height: 120px;
+  height: 125px;
   margin: 0 auto;
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+}
+
+/* timer  */
+.coundown{
+  position: absolute;
+  right: 10px;
+  top: 0;
+  font-size: 30px;
+  color: white;
+}
+.containerElementTimer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin-top: -10vh;
+}
+.elementTimer{
+  width: 100%;
+  height: 100%;
+  
+}
+.elementTimer h1{
+  color: white;
+  margin-bottom: 40px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.elementTimer h2{
+  text-decoration: none;
+  width: 100%;
+  height: 3.6rem;
+  color: #67C1EF;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  right: 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
 }
